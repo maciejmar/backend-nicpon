@@ -21,5 +21,5 @@ app.use('/',apiRouter);
 app.get('/favico.ico', (req, res) => {
   res.sendStatus(404);
 });
-const PORT = parseInt(process.env.PORT) || 3000;
+const PORT = parseInt(process.env.PORT) || 3001;
 app.listen(PORT, () => console.log(`Backend Nicpon app is listening on port ${process.env.PORT}.`));
