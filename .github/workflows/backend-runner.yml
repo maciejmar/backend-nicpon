@@ -24,7 +24,3 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm start
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
