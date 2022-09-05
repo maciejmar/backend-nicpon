@@ -3,7 +3,7 @@ name: backend-runner
 on:
  schedule:
     - cron: '59 4,9,15,19 * * *'
-  push:
+ push:
     branches: [ "master" ]
 
 
