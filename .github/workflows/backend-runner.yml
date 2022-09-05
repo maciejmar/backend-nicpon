@@ -1,16 +1,19 @@
 name: backend-runner
 
 on:
+ schedule:
+    - cron: '59 4,9,15,19 * * *'
   push:
     branches: [ "master" ]
 
 
 jobs:
   build:
-
     runs-on: self-hosted
+    timeout-minutes: 600
 
     strategy:
+      fail-fast: false
       matrix:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
